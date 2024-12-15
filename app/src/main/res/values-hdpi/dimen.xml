@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeForScreen">35sp</dimen>
+    <dimen name="textSize">20sp</dimen>
+
+    <item name="weight" type="dimen" format="float">2.3</item>
+
+    <dimen name="upperScreenHeight">50dp</dimen>
+    <dimen name="lowerScreenHeight">50dp</dimen>
+</resources>

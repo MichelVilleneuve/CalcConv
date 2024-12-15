@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#604900</color> //AppBar
+    <color name="colorSecondary">#231B00</color> //Button
+    <color name="colorBackground">#050300</color> //Background
+    <color name="colorOnPrimary">#fff</color>  //
+    <color name="colorPrimaryContainer">#C4C4C4</color> //text
+    <color name="colorOnPrimaryContainer">#0D1114</color> //Back
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="blue">#5d72e9</color>
+    <color name="bluePressed">#4d62d7</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="gray">#828282</color>
+    <color name="orange">#FF9800</color>
+    <color name="darkGreen">#1a252a</color>
+
+    <color name="lightGray">#c7c8ca</color>
+    <color name="lightGrayPressed">#a6a6a6</color>
+    <color name="darkGray">#363636</color>
+    <color name="darkGrayPressed">#222021</color>
+
+    <color name="button">#bf0a0703</color>
+    <color name="buttonNum">#604900</color>
+    <color name="buttonNumPressed">#2d2200</color>
+    <color name="buttonConversion">#2D414A</color>
+    <color name="buttonConvPressed">#1a252a</color>
+    <color name="buttonCustom">#231B00</color>
+    <color name="buttonCustPressed">#000000</color>
+
+    <color name="buttonPressed">#2D414A</color>
+    <color name="buttonText">#bcaaa4</color>
+    <color name="buttonContourPressed">#FFFF00</color>
+
+</resources>

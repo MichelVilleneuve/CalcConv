@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_app1"
+        android:title="App 1"/>
+    <item
+        android:id="@+id/nav_app2"
+        android:title="App 2"/>
+    <item
+        android:id="@+id/nav_app3"
+        android:title="App 3"/>
+    <item
+        android:id="@+id/nav_app4"
+        android:title="App 4"/>
+</menu>

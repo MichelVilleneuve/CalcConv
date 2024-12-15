@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.michelvilleneuve.calcconv'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'com.michelvilleneuve.calcconv'
+        minSdk 24
+        targetSdk 34
+        versionCode 3
+        versionName "1.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures{
+        viewBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'com.michelvilleneuve.calculator'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.5.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    // Add butterKnife library
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor'com.jakewharton:butterknife-compiler:10.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'com.android.support:appcompat-v7'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.google.android.material:material:1.11.0'
+
+}
+tasks.withType(JavaCompile).configureEach{
+    options.fork = true
+    options.forkOptions.jvmArgs +=[
+            '--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED',
+            '--add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED',
+            '--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED']
+}

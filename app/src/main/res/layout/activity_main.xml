@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutOne"
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:layout_margin="@dimen/margin"
+        android:layout_weight="@dimen/weight"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/displayMMResult"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:autoSizeTextType="uniform"
+            android:gravity="end"
+            android:maxLength="21"
+            android:maxLines="1"
+            android:textColor="@color/darkGreen"
+            android:textSize="@dimen/textSizeForScreen" />
+
+        <TextView
+            android:id="@+id/displayINResult"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:autoSizeTextType="uniform"
+            android:gravity="end"
+            android:maxLength="21"
+            android:maxLines="1"
+            android:textColor="@color/darkGreen"
+            android:textSize="@dimen/textSizeForScreen" />
+
+        <TextView
+            android:id="@+id/displayResult"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:autoSizeTextType="uniform"
+            android:gravity="end"
+            android:maxLength="21"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeForScreen" />
+
+        <EditText
+            android:id="@+id/showOperation"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@null"
+            android:gravity="end"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:maxLength="21"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeForScreen"
+            tools:ignore="LabelFor,EditableContentDescCheck,SpeakableTextPresentCheck" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/colorBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding">
+
+        <Button
+            android:id="@+id/btnCV1"
+            style="@style/button3"
+            android:hapticFeedbackEnabled="true"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:text="lbs◄ ►Kg \n\u261D ► g" />
+
+        <Button
+            android:id="@+id/btnCV2"
+            style="@style/button3"
+            android:hapticFeedbackEnabled="true"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:text="Gal◄ ►Lt" />
+
+        <Button
+
+            android:id="@+id/btnCV3"
+            style="@style/button3"
+            android:hapticFeedbackEnabled="true"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:text="Miles◄ ►km" />
+
+        <Button
+            android:id="@+id/btnCV4"
+            style="@style/button3"
+            android:hapticFeedbackEnabled="true"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:text="cup◄ ►ml\n\u261D ► Oz"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/colorBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding">
+
+        <Button
+            android:id="@+id/btnCV5"
+            style="@style/button3"
+            android:hapticFeedbackEnabled="true"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:text="In◄ ►MM\n\u261D ► CM" />
+
+        <Button
+
+            android:id="@+id/btnCV6"
+            style="@style/button3"
+            android:hapticFeedbackEnabled="true"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:text="Ft◄ ►M" />
+
+        <Button
+
+            android:id="@+id/btnCV7"
+            style="@style/button3"
+            android:hapticFeedbackEnabled="true"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:text="ft²◄ ►m²" />
+
+
+        <Button
+
+            android:id="@+id/btnCV8"
+            style="@style/button3"
+            android:hapticFeedbackEnabled="true"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:text="°F◄ ►°C"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/colorBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding">
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/button2"
+            android:layout_gravity="center"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/c" />
+
+        <ImageButton
+            android:id="@+id/btnBS"
+            style="@style/button2"
+            android:contentDescription="@string/back_space"
+            android:text="@string/bs"
+            app:tint="@color/colorOnPrimary"
+            android:padding="50dp"
+            android:hapticFeedbackEnabled="true"
+            app:srcCompat="@drawable/backspace_36" />
+
+        <Button
+            android:id="@+id/btnPercent"
+            style="@style/button2"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/remaining" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            style="@style/button2"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/divide" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:background="@color/colorBackground"
+        android:padding="@dimen/padding">
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/button1"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/seven" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/button1"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/eight" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/button1"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/nine" />
+
+        <Button
+            android:id="@+id/btnMul"
+            style="@style/button2"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/multiply" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/colorBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding">
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/button1"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/four" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/button1"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/five" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/button1"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/six" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/button2"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/plus" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorBackground"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/button1"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/one" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/button1"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/two" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/button1"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/three" />
+
+        <Button
+            android:id="@+id/btnSub"
+            style="@style/button2"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/sub" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/colorBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding">
+
+        <Button
+            android:id="@+id/btnZero"
+            style="@style/button1"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/zero" />
+
+        <Button
+            android:id="@+id/btnPoint"
+            style="@style/button1"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/point" />
+
+        <Button
+            android:id="@+id/btnNegative"
+            style="@style/button2"
+            android:text="@string/pos_neg" />
+
+        <Button
+            android:id="@+id/btnEquals"
+            style="@style/button3"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/equals" />
+
+    </LinearLayout>
+</LinearLayout>
