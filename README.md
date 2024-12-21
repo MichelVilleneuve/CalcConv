@@ -1,4 +1,4 @@
-[Back to Main](https://MichelVilleneuve.github.io/)
+[Back to Main](https://michelvilleneuve.github.io/)
 # **Calculator conversions - Calculatrice conversions**
 <img src="CalcConvMain.png" width="800" />  
 
