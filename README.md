@@ -21,4 +21,5 @@ Pounds to Grams *toggle* Grams to Pounds,
 
 
 Performing a calculation and conversion - Effectuer un calcul et une conversion
-![Full calculation](https://github.com/user-attachments/assets/4581f69e-3051-436b-8d99-bdebc0037943 width="100")
+
+![Full calculation](https://github.com/user-attachments/assets/90613c36-784e-42d2-88ec-f6c1cb74d02d)
